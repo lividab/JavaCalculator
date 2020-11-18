@@ -1,0 +1,52 @@
+//Java Calculator and Magic Calculator
+
+public class JavaCalculator {
+
+	public double add(int a, int b) {
+		return (double)a+b;
+	}
+	public double subtraction(int a, int b) {
+		return (double)a-b;
+	}
+	public double multiplication(int a, int b) {
+		return (double)a*b;
+		
+	}
+	public double division(int a, int b) {
+		return (double)a/b;
+	}
+	
+	public double square(int a) {
+	return (double)a*a;
+	}
+}
+
+// Java Calculator 
+
+
+import java.math.*;
+public class MagicCalculator extends JavaCalculator{
+
+	public double squarRoot(int a) {
+		return Math.sqrt(a);
+		
+	}
+	public double sinTrig(int a) {
+		return Math.sin(a);
+	}
+	public double cosineTrig(int a) {
+		return Math.cos(a);
+	}
+	public double tangentTrig(int a) {
+		return Math.tan(a);
+		
+	}
+	public double factorial(int a) {
+		if (a == 0) {
+			return 1;
+		}else {
+			return(a*factorial(a-1));
+		}
+
+}
+}
